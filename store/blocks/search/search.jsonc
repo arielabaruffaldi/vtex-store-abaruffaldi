@@ -1,0 +1,20 @@
+{
+  "store.search": {
+    "blocks": [
+      "search-result-layout",
+      "rich-text#search"
+    ]
+  },
+  "rich-text#search":{
+    "props": {
+      "text": "search prueba"
+    }
+  }, 
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  }
+}
