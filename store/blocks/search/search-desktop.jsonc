@@ -10,7 +10,7 @@
       "filter-navigator.v3",
       "search-fetch-more"
     ]
-  },
+  }/* ,
    "search-content": {
     "blocks": ["gallery", "not-found"]
   },
@@ -28,5 +28,5 @@
       ],
       "ManyByLineSummary": "product-summary.shelf"
     }
-  }
+  } */
 }
