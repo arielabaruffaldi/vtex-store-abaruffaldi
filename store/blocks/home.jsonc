@@ -3,6 +3,7 @@
     "blocks": [
       "responsive-layout.desktop#desktop",
       "responsive-layout.mobile#mobile",
+      "modal-trigger#first",
       "tab-layout#home",
       "info-card#home-button-right",
       "info-card#home-button-left",
@@ -52,6 +53,27 @@
       "text": "### Your Coffee, Your Way \n #### New Coffee Makers Collection (I'm on mobile)",
       "textPosition": "CENTER",
       "textAlignment": "CENTER"
+    }
+  },
+  "modal-trigger#first": {
+    "children": [
+      "rich-text#trigger",
+      "modal-layout#first"
+    ]
+  },
+  "rich-text#trigger": {
+    "props": {
+      "text": "CLICK ME"
+    }
+  },
+  "modal-layout#first": {
+    "children": [
+      "rich-text#hello"
+    ]
+  },
+  "rich-text#hello": {
+    "props": {
+      "text": "Hello"
     }
   },
   "tab-layout#home": {
