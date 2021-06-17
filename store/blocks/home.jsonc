@@ -3,7 +3,7 @@
     "blocks": [
       "responsive-layout.desktop#desktop",
       "responsive-layout.mobile#mobile",
-      "modal-trigger#first",
+      "list-context.product-list",
       "tab-layout#home",
       "info-card#home-button-right",
       "info-card#home-button-left",
@@ -55,7 +55,15 @@
       "textAlignment": "CENTER"
     }
   },
-  "modal-trigger#first": {
+  "list-context.product-list": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout"
+    ]
+  },
+  /* "modal-trigger#first": {
     "children": [
       "rich-text#trigger",
       "modal-layout#first"
@@ -75,7 +83,7 @@
     "props": {
       "text": "Hello"
     }
-  },
+  }, */
   "tab-layout#home": {
     "children": [
       "tab-list#home",
