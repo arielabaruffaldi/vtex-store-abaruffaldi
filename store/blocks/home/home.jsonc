@@ -1,6 +1,8 @@
 {
   "store.home": {
     "blocks": [
+      "countdown",
+      "countdown.title",
       "flex-layout.row#slider",
       "rich-text#new-arrivals",
       "list-context.product-list#new-arrivals",
