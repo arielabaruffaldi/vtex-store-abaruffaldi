@@ -3,13 +3,38 @@
     "blocks": [
       "responsive-layout.desktop#desktop",
       "responsive-layout.mobile#mobile",
-      "list-context.product-list",
-      "tab-layout#home",
-      "info-card#home-button-right",
-      "info-card#home-button-left",
+      "info-card#clearance",
+      "info-card#vintage",
+      /* "list-context.product-list#quickview", */
+      /* "tab-layout#home", */
       "flex-layout.row#home",
       "slider-layout#home"
     ]
+  },
+  "info-card#clearance": {
+    "props": {
+      "id": "info-card-clearance",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#vintage": {
+    "props": {
+      "id": "info-card-vintage",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+      "headline": "Vintage",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center",
+      "blockClass": "vintage"
+    }
   },
   "responsive-layout.desktop#desktop": {
     "children": [
@@ -55,14 +80,14 @@
       "textAlignment": "CENTER"
     }
   },
-  "list-context.product-list": {
+  /*   "list-context.product-lis#quickview": {
     "blocks": [
       "product-summary.shelf"
     ],
     "children": [
       "slider-layout"
     ]
-  },
+  }, */
   /* "modal-trigger#first": {
     "children": [
       "rich-text#trigger",
@@ -129,6 +154,31 @@
     ],
     "props": {
       "tabId": "electronics"
+    }
+  },
+  "stack-layout#cta": {
+    "children": [
+      "image#cta",
+      "link#cta"
+    ]
+  },
+  "image#cta": {
+    "props": {
+      "blockClass": "cover",
+      "width": "100%",
+      "height": 400,
+      "src": "https://appliancetheme.vtexassets.com/assets/app/src/appliancecat___1b7592b49667c6a89203a0997e06bc87.jpg"
+    }
+  },
+  "link#cta": {
+    "props": {
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "large"
+      },
+      "href": "/washer",
+      "label": "Check these awesome discounts"
     }
   },
   "rich-text#home1": {
