@@ -1,15 +1,21 @@
 {
   "store.search": {
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip"
+      }
+    },
     "blocks": [
       "search-result-layout",
       "rich-text#search"
     ]
   },
-  "rich-text#search":{
+  "rich-text#search": {
     "props": {
       "text": "search prueba"
     }
-  }, 
+  },
   "search-result-layout": {
     "blocks": [
       "search-result-layout.desktop",

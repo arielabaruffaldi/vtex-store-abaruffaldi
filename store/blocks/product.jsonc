@@ -1,45 +1,35 @@
 {
   "store.product": {
     "children": [
-      "condition-layout.product",
       "flex-layout.row#product-breadcrumb",
-      "flex-layout.row#product-main"
+      "flex-layout.row#product-main",
+      "shelf#related"
     ]
   },
-  "condition-layout.product": {
-    "children": [
-      "condition.product#retro-mixer"
-    ]
-  },
-  "condition.product#retro-mixer": {
+
+  "shelf#related": {
+    "blocks": ["product-summary.shelf"],
     "props": {
-      "conditions": [
-        {
-          "subject": "productId",
-          "verb": "is",
-          "object": "2"
-        }
-      ]
-    },
-    "children": [
-      "image#retro-mixer-banner"
-    ]
-  },
-  "image#retro-mixer-banner": {
-    "props": {
-      "src": "https://appliancetheme.vtexassets.com/assets/app/src/retroimage___92a8271aac7c51d2059193bdbe019016.jpg",
-      "width": "100%",
-      "height": "200px",
-      "blockClass": "cover"
+      "recomendation": "editor.relatedProducts.similars",
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 1.5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "More options for this style"
+      }
     }
   },
+
+
+
   "flex-layout.row#product-breadcrumb": {
     "props": {
       "marginTop": 20
     },
-    "children": [
-      "breadcrumb"
-    ]
+    "children": ["breadcrumb"]
   },
   "flex-layout.row#product-main": {
     "props": {
@@ -52,16 +42,46 @@
       "blockClass": "product-main"
     },
     "children": [
-      "product-images",
+      "flex-layout.col#stack",
       "flex-layout.col#right-col"
     ]
   },
+
+  "stack-layout": {
+    "children": [
+      "flex-layout.row#product-image",
+      "product-specification-badges"
+    ]
+  },
+
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "Group",
+      "specificationName": "On Sale",
+      "visibleWhen": "True",
+      "displayValue": "SPECIFICATION_NAME"
+    }
+  },
+
+  "flex-layout.col#stack": {
+    "children": ["stack-layout"],
+    "props": {
+      "width": "70%",
+      "rowGap": 0
+    }
+  },
+
+  "flex-layout.row#product-image": {
+    "children": ["product-images"]
+  },
+
   "product-images": {
     "props": {
       "displayThumbnailsArrows": true,
       "thumbnailsOrientation": "vertical"
     }
   },
+
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
@@ -76,21 +96,22 @@
       "share#default"
     ]
   },
+
   "product-price#product-details": {
     "props": {
       "showInstallments": true,
       "showSavings": true
     }
   },
+
   "flex-layout.row#buy-button": {
     "props": {
       "marginTop": 4,
       "marginBottom": 7
     },
-    "children": [
-      "buy-button"
-    ]
+    "children": ["buy-button"]
   },
+
   "share#default": {
     "props": {
       "social": {

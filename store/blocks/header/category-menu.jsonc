@@ -1,0 +1,94 @@
+{
+    "vtex.menu@2.x:menu#category-menu": {
+        "children": [
+            "menu-item#categories"
+        ],
+        "props": {
+            "experimentalOptimizeRendering": true
+        }
+    },
+    "menu-item#categories": {
+        "props": {
+            "id": "menu-item-custom-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "noFollow": true,
+                "tagTitle": "Categories",
+                "text": "Categories"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#categories"
+        ]
+    },
+    "vtex.menu@2.x:submenu#categories": {
+        "children": [
+            "vtex.menu@2.x:menu#categories"
+        ]
+    },
+    "vtex.menu@2.x:menu#categories": {
+        "props": {
+            "items": [
+                {
+                    "id": "menu-item-category-perfumes",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/exm-moda-ariela-baruffaldi/exm-perfumes-ariela-baruffaldi",
+                        "noFollow": false,
+                        "tagTitle": "perfumes",
+                        "text": "Perfumes"
+                    }
+                },
+                {
+                    "id": "menu-item-category-jeans",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "type": "internal",
+                        "href": "/exm-moda-ariela-baruffaldi/exm-jeans-ariela-baruffaldi",
+                        "noFollow": false,
+                        "tagTitle": "jeans",
+                        "text": "Jeans"
+                    }
+                },
+                {
+                    "id": "menu-item-category-small-appliances",
+                    "type": "custom",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId": 152,
+                        "type": "internal",
+                        "href": "/small-appliances",
+                        "noFollow": true,
+                        "tagTitle": "Small appliances",
+                        "text": "Small appliances"
+                    }
+                }
+            ]
+        }
+    },
+    "menu-item#login": {
+        "props": {
+            "id": "menu-item-custom-login",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/account",
+                "noFollow": true,
+                "tagTitle": "My account",
+                "text": "My account"
+            }
+        }
+    }
+}

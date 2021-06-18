@@ -11,13 +11,67 @@
       "header-layout.mobile"
     ]
   },
+
   "header-layout.desktop": {
     "children": [
-      "sticky-layout#desktop",
+      //"sticky-layout#desktop",
   /*     "category-menu", */
-      "vtex.menu@2.x:menu#websites"
+      //"vtex.menu@2.x:menu#websites"
+      "header-row#4-desktop",
+      "header-row#5-desktop"
     ]
   },
+
+  "header-row#4-desktop": {
+    "children": [
+      "logo#desktop"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header"
+    }
+  },
+
+  "header-row#5-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#category-menu",
+      "header-spacer",
+      "header-spacer",
+      "search-bar",
+      "login",
+      "minicart"
+    ],
+    "props": {
+      "blockClass": "main-topbar"
+    }
+  },
+
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://appliancetheme.vteximg.com.br/arquivos/flatflat-logo-large.png",
+      "width": "110"
+    }
+  },
+
+  "minicart": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props": {
+      "type": "popup",
+      "showRemoveButton": true,
+      "showDiscount": true,
+      "showSku": true,
+      "labelMiniCartEmpty": "",
+      "labelButtonFinishShopping": "Go to checkout",
+      "enableQuantitySelector": true,
+      "maxQuantity": 10,
+      "labelClasses": "gray"
+    }
+  }
+  /* 
   "category-menu": {
     "props": {
       "showAllDepartments": true,
@@ -132,5 +186,5 @@
   },
   "drawer": {
     "children": []
-  }
+  } */
 }
